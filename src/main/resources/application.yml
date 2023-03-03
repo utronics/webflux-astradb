@@ -1,0 +1,19 @@
+spring:
+  data:
+    cassandra:
+      keyspace-name:
+      username: #Client ID - get from Token
+      password: #Client Secret - get from Token
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+datastax.astra:
+  secure-connect-bundle: #Path of the connect bundle zip file.
+astra.db:
+  id: #Datacenter ID
+  region: #region
+  keyspace: #keyspace-name
+  application.token: #Token
