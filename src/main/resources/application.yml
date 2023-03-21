@@ -1,9 +1,9 @@
 spring:
   data:
     cassandra:
-      keyspace-name:
-      username: #Client ID - get from Token
-      password: #Client Secret - get from Token
+      keyspace-name: #Keyspace name
+      username: #Client ID
+      password: #Client Secret
       schema-action: create-if-not-exists
       request:
         timeout: 10s
@@ -14,6 +14,7 @@ datastax.astra:
   secure-connect-bundle: #Path of the connect bundle zip file.
 astra.db:
   id: #Datacenter ID
-  region: #region
-  keyspace: #keyspace-name
+  region: #asia-south1
+  keyspace: #Keyspace name
   application.token: #Token
+
